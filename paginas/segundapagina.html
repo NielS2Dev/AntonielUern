@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Bem-vindo!</title>
+</head>
+<body>
+    <h1 id="mensagem"></h1>
+
+    <script>
+        // Pega o nome armazenado
+        const nome = localStorage.getItem("nomeUsuario");
+
+        if (nome) {
+            document.getElementById("mensagem").textContent = `Olá, ${nome}! Seja bem-vindo ao projeto.`;
+        } else {
+            // Se acessar direto sem ter digitado o nome, volta para a página principal
+            window.location.href = "index.html";
+        }
+    </script>
+</body>
+</html>
