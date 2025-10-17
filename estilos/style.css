@@ -112,6 +112,9 @@ footer > a:hover{
     width: 240px;
     height: 35px;
     font-size: 0.7em;
+}
+
+#butaoEnviar:hover{
     cursor: pointer;
 }
 
