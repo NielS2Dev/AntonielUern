@@ -8,6 +8,6 @@ document.getElementById('butaoEnviar').addEventListener('click', function() {
         localStorage.setItem("nomeUsuario", nome);
 
         // Redireciona para outra página (coloca o nome do arquivo certo aqui)
-        window.location.href = "../paginas/segunda.html";
+        window.location.href = "segunda.html";
     }
 });
