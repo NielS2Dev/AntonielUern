@@ -5,6 +5,7 @@
     margin: 0px;
 }
 
+
 body {
     margin: 0;
     padding: 0;
@@ -34,19 +35,119 @@ header > div{
 
 #cabecalho {
     width: 100%;
-    height: 160px;
-    border: 2px dashed red;
+    height: 250px;
 }
 
+#cabecalho_flex{
+    padding-bottom: 3px;
+    backdrop-filter: blur(7px);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    position: relative;
+    align-items: center;
+
+    background-image: 
+        /* O degradê vai de CIMA (topo da borda) para BAIXO (base da borda) */
+        linear-gradient(to bottom, 
+            /* Começa com a cor neon (opacidade total) */
+            rgb(28, 63, 70) 0%, 
+            /* Desvanece para o transparente na base */
+            transparent 100%
+        ), 
+        /* Mantém o segundo background para  controle */
+        linear-gradient(to top, transparent, transparent);
+}
+
+.uern{
+    width: 350px;
+    height: 140px;
+    margin-top: 30px;
+    margin-left: 120px;
+    margin-bottom: 35px;
+    transition: filter 0.3s, width 0.3s, height 0.3s;
+}
+
+.uern:hover{
+    filter: drop-shadow(0px 0px 10px rgb(5, 201, 54));
+    cursor: pointer;
+    width: 380px;
+    height: 150px;
+}
+
+#texoCabe{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 120px;
+    color: white;
+    font-size: 0.8em;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    transition: width 0.3s;
+    text-align: center;
+}
+
+#texoCabe:hover{
+    width: 550px;
+    border-radius: 25px;
+    text-shadow: 2px 2px 2px rgba(0, 255, 0, 0.438);
+}
+
+#textoCabe > h1{
+    font-weight: bolder;
+    font-size: 2em;
+
+}
+
+#descr{
+    font-weight: 100;
+    font-size: 0.8em;
+    transition: font-size 0.3s;
+    text-align: justify;
+}
+
+#descr:hover{
+    font-size: 0.9em;
+}
+
+.nielpequeno {
+    right: 0;
+    margin-right: 10px;
+    position: absolute;
+    border-radius: 50%; 
+    
+    width: 200px;
+    height: 200px;
+    
+    transition: filter 0.3s, width 0.3s, height 0.3s;
+    
+    display: block; 
+    overflow: hidden; 
+}
+
+.nielpequeno:hover {
+    filter: drop-shadow(0px 0px 10px rgb(0, 255, 55));
+    width: 250px;
+    height: 250px;
+}
+
+.nielpequeno img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: none; 
+}
 
 main {
     border: 3px dashed rgb(0, 255, 0);
     width: 700px;
     padding: 20px;
-    margin: 20px auto;       /* centraliza horizontalmente */
+    margin: 20px auto;      
     display: flex;
-    flex-direction: column;  /* empilha os elementos verticalmente */
-    align-items: center;     /* centraliza horizontalmente dentro do main */
+    flex-direction: column;
+    align-items: center;
     text-align: center;
 }
 
@@ -62,7 +163,44 @@ main > p {
     border: 2px dashed rgb(81, 255, 0);
 }
 
+
 footer {
-    margin-top: 20px;
     text-align: center;
+    margin-top: 20px;
+    padding: 10px 0; 
+    background-color: black; 
+    color: white; 
+}
+
+footer a {
+    color: inherit; 
+    text-decoration: none; 
+    display: inline-block; 
+}
+
+footer p {
+    font-size: 1.1em;
+    color: white; 
+    padding: 5px;
+    transition: font-size 0.3s; 
+}
+
+
+footer a:hover p {
+    text-decoration: underline;
+    opacity: 0.9;
+    font-size: 1.2em;
+}
+
+
+@media (max-width: 1300px) { 
+    #texoCabe {
+        display: none;
+    }
+}
+
+@media (max-width: 710px){
+    .nielpequeno{
+        display: none;
+    }
 }
