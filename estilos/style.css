@@ -18,7 +18,7 @@ video#meu_video{
 }
 
 .caixa_principal{
-    width: 600px;
+    width: 650px;
     min-height: calc(100vh - 20px);
     background: rgba(255, 255, 250, 0.1);
     backdrop-filter: blur(10px);
@@ -62,7 +62,6 @@ footer > a:hover{
 .uern{
     width: 100%;
     height: 140px;
-    border: 2px dashed red;
 }
 
 .uern > img{
@@ -83,7 +82,6 @@ footer > a:hover{
 .Login {
     width: 100%;
     padding-top: 15px;
-    border: 3px dashed blue;
     display: flex;
     flex-direction: row;
 }
@@ -137,6 +135,64 @@ h2{
     font-size: 0.7em;
     line-height: 1.4em;
     box-sizing: border-box;
+}
+
+
+.descricao p {
+    color: inherit; /* Herda a cor branca do .caixa_principal */
+    margin-bottom: 10px;
+    text-align: left; /* Mantém o alinhamento de parágrafos à esquerda */
+}
+
+.descricao ul {
+    list-style: none; /* Remove os marcadores de lista padrão */
+    padding-left: 0;
+    margin-top: 15px;
+}
+
+.descricao ul li {
+    /* Usamos um fundo semi-transparente para dar contraste e manter a estética do blur */
+    background-color: rgba(255, 255, 255, 0.1); 
+    /* Azul vibrante para a barra lateral, que contrasta bem com o fundo escuro */
+    border-left: 4px solid #00BFFF; 
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    border-radius: 6px;
+    text-align: left; /* Alinha o texto da lista à esquerda para melhor leitura */
+    font-size: 0.9em; /* Mantém a proporção do font-size da .descricao */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Sombra suave para o efeito de "elevação" */
+    transition: background-color 0.3s;
+}
+
+/* Efeito ao passar o mouse */
+.descricao ul li:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Fica um pouco mais claro no hover */
+    cursor: default;
+}
+.descricao ul li strong {
+    color: #FFD700; /* Amarelo ouro (Gold) para forte destaque contra o fundo escuro */
+}
+z
+/* -------------------------------------- */
+/* GARANTIAS DE CORES DENTRO DA DESCRIÇÃO */
+/* -------------------------------------- */
+/* Garante que os títulos h3 dentro da descrição sejam brancos (se necessário, para sobrepor estilos anteriores) */
+.descricao h3 {
+    color: #fff; 
+}
+
+.destaque-conclusao {
+    background-color: rgba(255, 215, 0, 0.2); /* Fundo amarelo/dourado semi-transparente */
+    border: 1px solid #FFD700; /* Borda amarela sólida */
+    color: #FFD700; /* Texto em amarelo dourado para contraste */
+    padding: 15px;
+    margin-top: 25px;
+    margin-bottom: 5px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: bold;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.4); /* Brilho sutil para o efeito "glow" */
 }
 
 #projeto{

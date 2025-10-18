@@ -79,20 +79,20 @@ header > div{
 
 #texoCabe{
     font-family: Arial, Helvetica, sans-serif;
-    margin-left: 120px;
+    margin-left: 60px;
     color: white;
-    font-size: 0.8em;
-    width: 500px;
+    font-size: 0.75em;
+    width: 550px;
     display: flex;
     flex-direction: column;
     transition: width 0.3s;
     text-align: center;
+    transition: filter 0.3s, font-size 0.3s;
 }
 
 #texoCabe:hover{
-    width: 550px;
-    border-radius: 25px;
-    text-shadow: 2px 2px 2px rgba(0, 255, 0, 0.438);
+    filter: drop-shadow(0px 0px 10px rgb(0, 255, 55));
+    font-size: 0.80em;
 }
 
 #textoCabe > h1{
@@ -101,17 +101,17 @@ header > div{
 
 }
 
-#descr{
-    font-weight: 100;
-    font-size: 0.8em;
-    transition: font-size 0.3s;
-    text-align: justify;
+#retornar{
+    padding-top: 15px;
+    color: white;
+    font-size: 1.4em;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
 }
 
-#descr:hover{
-    font-size: 0.9em;
+#retonaricon{
+    width: 30px;
 }
-
 .nielpequeno {
     right: 0;
     margin-right: 10px;
@@ -141,19 +141,50 @@ header > div{
 }
 
 main {
-    border: 3px dashed rgb(0, 255, 0);
-    width: 700px;
-    padding: 20px;
-    margin: 20px auto;      
+    width: 800px;
+    margin: auto;      
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    backdrop-filter: blur(15px);
+    border-radius: 25px;
 }
+
+main > div{
+    width: 100%;
+    display: flex;
+    color: white;
+    padding-bottom: 20px;
+}
+
 
 main > p {
     color: white;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+main > div > img {
+    padding-right: 15px;
+}
+
+main img {
+    width: 150px; 
+    height: auto; 
+    display: block; 
+    transition: width 0.3s ease-in-out, margin 0.3s ease-in-out, filter 0.3s; 
+}
+
+main img:hover {
+    width: 200px; 
+    margin: 15px auto; 
+    filter: drop-shadow(3px 3px 20px rgb(1, 225, 255));
+}
+
+main > div > section > h1{
+    font-size: 1.2em;
+    text-align: left;
+    text-indent: 10px;
 }
 
 #principal{
