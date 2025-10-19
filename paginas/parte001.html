@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style_03.css">
+</head>
+<body>
+    <video id="meuvideo" src="../midias/wallpaper.mp4" autoplay muted loop></video>
+
+    <header id="cabecalho">
+        <div id="cabecalho_flex">
+            <a href="https://portal.uern.br/" target="_blank"><img src="../midias/LOGOMARCA_UERN_Branca.png" class="uern"></a>
+            <div id="texoCabe">
+                <h1 id="saudacao">Seja bem-vindo!</h1>
+                <a href="../segunda.html">
+                    <h1 id="descr">Aprenda C com Jogos: Structs, Funções, Strings, Domine Ponteiros e Conclua com Alocação Dinâmica na Prática de Projetos de Game Development.</h1>
+                </a>
+            </div>
+            <a href="https://github.com/NielS2Dev" target="_blank" class="nielpequeno"><img src="../midias/niel_pequeno2.png" alt=""></a>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1>Detalhes da Criação</h1>
+            <h2>A Arquitetura do Nosso Jogo em C</h2>
+            <p>
+                A jornada de desenvolvimento do nosso projeto de RPG foi marcada por desafios técnicos
+                e importantes decisões de design. A seguir, detalhamos como o código foi estruturado
+                e as escolhas que fizemos para garantir a estabilidade do produto final.
+            </p>
+            <h3>1. A Decisão Crucial: Do Multiarquivo ao Monolítico</h3>
+            <p>
+                Inicialmente, o projeto foi concebido utilizando a estrutura <strong>Console Application C Project</strong>,
+                distribuindo o código em vários arquivos. No entanto, essa abordagem logo encontrou grandes obstáculos:
+            </p>
+
+            <div id="imagem_001">
+                <img src="../midias/001.png" alt="">
+
+            </div>
+
+            <ul>
+                <li><strong>Problemas de Dependência:</strong> A distribuição do executável (.exe) em outros computadores
+                    frequentemente resultava em erros de dependência de bibliotecas externas (como libxml ou SDL).
+                </li>
+                <li><strong>Portabilidade Limitada:</strong> A execução em diferentes sistemas operacionais (como Linux ou macOS)
+                    tornava-se inviável devido a essas dependências de pacotes.
+                </li>
+            </ul>
+            <p>
+                Para resolver esses problemas de estabilidade e distribuição, tomamos uma decisão fundamental:
+                refazer todo o projeto em um único arquivo <code>.c</code>. Essa estratégia, embora menos modular,
+                garantiu que o código fosse completamente autossuficiente e mais robusto.
+            </p>
+        </div>
+    </main>
+
+    <footer>
+            <a href="https://github.com/NielS2Dev" target="_blank">
+                <p>Site 100% Desenvolvido por Antoniel, Acesse meu GITHUB : </p>
+            </a>
+    </footer>
+    <!-- <h1 id="nomedigitado">Seja bem vindo</h1> -->
+
+    <script type="module" src="script_02.js"></script>
+</body>
+</html>
+
