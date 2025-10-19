@@ -38,7 +38,7 @@
             </p>
 
             <div id="imagem_001">
-                <img src="../midias/001.png" alt="">
+                <img src="../midias/001.png" alt="" title="Print tirado por mim no DEV C++">
 
             </div>
 
@@ -55,6 +55,48 @@
                 refazer todo o projeto em um único arquivo <code>.c</code>. Essa estratégia, embora menos modular,
                 garantiu que o código fosse completamente autossuficiente e mais robusto.
             </p>
+
+            <h3>2. Conjunto de Bibliotecas Essenciais</h3>
+            <p>
+                Para o projeto monolítico, utilizamos um conjunto enxuto e eficaz de bibliotecas padrão:
+            </p>
+
+            <table class="bibliotecas">
+                <thead>
+                    <tr>
+                        <th>Biblioteca</th>
+                        <th>Finalidade</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>#include &lt;stdio.h&gt;</code></td>
+                        <td>Entrada e saída (funções como <code>printf</code> e <code>scanf</code>).</td>
+                    </tr>
+                    <tr>
+                        <td><code>#include &lt;windows.h&gt;</code></td>
+                        <td>Funções específicas para manipulação do console no Windows.</td>
+                    </tr>
+                    <tr>
+                        <td><code>#include &lt;string.h&gt;</code></td>
+                        <td>Manipulação de cadeias de caracteres.</td>
+                    </tr>
+                    <tr>
+                        <td><code>#include &lt;time.h&gt;</code></td>
+                        <td>Uso de funções relacionadas a tempo (necessário para seeds ou animações).</td>
+                    </tr>
+                    <tr>
+                        <td><code>#include &lt;stdbool.h&gt;</code></td>
+                        <td>Uso do tipo de dados booleano (<code>true</code>/<code>false</code>).</td>
+                    </tr>
+                    <tr>
+                        <td><code>#include &lt;ctype.h&gt;</code></td>
+                        <td>Verificação e conversão de caracteres (ex: <code>toupper</code>).</td>
+                    </tr>
+                </tbody>
+            </table>
+
+
         </div>
     </main>
 
@@ -65,7 +107,7 @@
     </footer>
     <!-- <h1 id="nomedigitado">Seja bem vindo</h1> -->
 
-    <script type="module" src="script_02.js"></script>
+    <script type="module" src="script_001.js"></script>
 </body>
 </html>
 
