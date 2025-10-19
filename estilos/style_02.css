@@ -236,6 +236,9 @@ footer a:hover p {
     font-size: 1.2em;
 }
 
+header a{
+    color: white;
+}
 
 @media (max-width: 1300px) { 
     #texoCabe {
