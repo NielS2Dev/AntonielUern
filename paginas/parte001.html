@@ -38,7 +38,7 @@
             </p>
 
             <div id="imagem_001">
-                <img src="../midias/001.png" alt="" title="Print tirado por mim no DEV C++">
+                <a href="" class="fotogeral"><img src="../midias/001.png" alt="" title="Print tirado por mim no DEV C++"></a>
 
             </div>
 
@@ -117,7 +117,7 @@
                 <p>A estrutura de dados para o herói foi definida com os atributos básicos de um RPG.</p>
             </li>
         <div id="imagem_002">
-            <img src="../midias/002.png" alt="" title="Exemplo da Struct do meu código">
+            <a href="" class="fotogeral"><img src="../midias/002.png" alt="" title="Exemplo da Struct do meu código"></a>
         </div>
             <li>
                 <p>Nick em Maiúsculo: Uma variável auxiliar (char_nickmaisculo) foi criada para armazenar o apelido do jogador em letras maiúsculas, reservada para uso futuro (como em títulos ou banners).</p>
@@ -132,8 +132,48 @@
             <li>
                 <p>Mudar Cor: A função void mudarcor(int cor) utiliza o SetConsoleTextAttribute do Windows, permitindo personalizar a cor do texto do console.</p>
             </li>
+            <li>
+                <p>ASCII Art: Textos de apresentação, como "UERN" e "Projeto RPG", foram convertidos em ASCII Art utilizando a ferramenta patorjk.com/software/taag e integrados ao código usando printf.</p>
+            </li>
+            <div id="imagem_003_004">
+                <a href="" class="fotogeral"><img src="../midias/003.png" alt=""></a>
+                <a href="" class="fotogeral"><img src="../midias/004.png" alt=""></a>
+            </div>
+            <li>
+                <p>
+                    Animação Multilinha: Criamos a função print_animado_multilinha. Ela exibe o texto da introdução (salvo em void introducao()) caractere por caractere, em paralelo, linha por linha, para um efeito de digitação envolvente, mantendo o main limpo.
+                </p>
+            </li>
         </ul>
+        <h3>5. Validação da <code>Entrada</code> do Jogador</h3>
+        <p>A experiência do usuário começa com a escolha do nick. Implementamos um laço while(!nomevalido) para garantir que o nome seja válido:</p>
+        <ul>
+            <li>
+                <p>O loop se repete até que um nome aceitável seja fornecido.</p>
+            </li>
+            <li>
+                <p>É feita uma verificação para impedir que o nick contenha espaços ou esteja vazio. Caso contrário, um <code>erro</code> é exibido.</p>
+            </li>
+            <li>
+                <p>
+                    Após a validação bem-sucedida, o <code>nomevalido</code> muda para <code>true</code>, encerrando o loop e exibindo a mensagem de boas-vindas.
+                </p>
+            </li>
+        </ul>
+        <h3>Por fim esse é a lógica do meu <code>main</code> até o prosente momento.</h3>
+        <div id="imagem06">
+            <a href="" class="fotogeral"><img src="../midias/007.jpg" alt=""></a>
+        </div>
 
+        <h3>Além disso, não muito necessario, eu alterei o icon do meu <code>.exe</code></h3>
+        <a href="" class="fotogeral"><img src="../midias/008.png" alt="" id="imagem_003_004"></a>
+
+        <h3>Link para download dos Programas em <code>.C</code> ou em <code>.exe</code></h2>
+        <ul>
+            <li>Até esse momento a versão do meu jogo é a 0.1.8</li>
+        </ul>
+        <a href="../programas/versao 0.1.8/RPG_0.1.8.cpp" id="ultimaa">Download em .c <img src="../midias/downloadpng.png" alt="" id="download"><br></a>
+        <a href="../programas/versao 0.1.8/RPG_0.1.8.exe" id="ultimaa">Download em .exe <img src="../midias/downloadpng.png" alt="" id="download"></a>
     </section>
 
     </main>
