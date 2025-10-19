@@ -5,6 +5,18 @@
     margin: 0px;
 }
 
+@media (max-width: 1300px) { 
+    #texoCabe {
+        display: none;
+    }
+}
+
+@media (max-width: 710px){
+    .nielpequeno{
+        display: none;
+    }
+}
+
 #descr{
     color: white;
 }
@@ -230,19 +242,48 @@ ul {
 }
 
 
+.bibliotecas {
+    width: 90%;             /* ou 100% se quiser ocupar mais espaço */
+    margin-left: 40px;      /* afasta da esquerda */
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 16px;
+}
 
 .container p{
     margin: 15px;
 }
 
-@media (max-width: 1300px) { 
-    #texoCabe {
-        display: none;
-    }
+.configuracao-rpg {
+    width: 90%;
+    margin: 40px auto;
+    padding: 10px 20px;
+    font-family: 'Segoe UI', sans-serif;
+    text-align: justify;
 }
 
-@media (max-width: 710px){
-    .nielpequeno{
-        display: none;
-    }
+.configuracao-rpg p{
+    color: white;
+}
+.configuracao-rpg ul {
+    margin-left: 25px;
+    list-style-type: disc;
+}
+
+.configuracao-rpg li {
+    margin-bottom: 10px;
+    color: orange;
+}
+
+.configuracao-rpg code {
+    background-color: rgba(0, 255, 85, 0.1);
+    color: #00ff55;
+    padding: 2px 5px;
+    border-radius: 5px;
+    font-family: "Consolas", monospace;
+}
+
+#imagem_002{
+    width: 100%;
+    text-align: center;
 }
